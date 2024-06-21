@@ -1,5 +1,11 @@
 /** @type {import('next').NextConfig} */
+
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
+  basePath: isProd ? '/how-long-has-it-been' : '',
+  assetPrefix: isProd ? '/how-long-has-it-been/' : '',
+  // Other Next.js configuration options can go here
 };
 
-export default nextConfig;
+module.exports = nextConfig;
