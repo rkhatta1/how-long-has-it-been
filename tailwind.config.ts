@@ -13,6 +13,11 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+
+      fontFamily: {
+        pop: ["Poppins", "sans-serif"],
+        fancy: ["Playwrite IS", "cursive"],
+      },
     },
   },
   plugins: [],
