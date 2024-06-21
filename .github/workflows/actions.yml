@@ -27,7 +27,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          branch: gh-pages
+          branch: main
           folder: .next
           clean: true
         env:
