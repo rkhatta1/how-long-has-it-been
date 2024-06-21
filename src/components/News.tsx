@@ -29,7 +29,7 @@ const News: React.FC = () => {
               params: {
                 country: 'in', // Country code for India
                 pageSize: 100, // Increase the page size to retrieve more headlines
-                apiKey: 'a90deb660a584798a2a8c5d90e5bdd01',// Replace with your News API key
+                apiKey: process.env.NEXT_PUBLIC_NEWS_API_KEY,// Replace with your News API key
               }
             });
             const allHeadlines: Headline[] = response.data.articles;
