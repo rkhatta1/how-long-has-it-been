@@ -60,7 +60,7 @@ const News: React.FC = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ y: {duration: 0.3, type: 'spring', stiffness: 200, damping: 20}, opacity: {duration: 0.3} }}
         viewport={{ once: true }}
-        className='text-2xl font-bold text-center'>What happened in India, since the day Reeva promised to call</motion.h2>
+        className='text-2xl font-bold text-center px-[2rem]'>What happened in India, since the day Reeva promised to call</motion.h2>
       {loading ? (
         <p>Loading headlines...</p>
       ) : (
