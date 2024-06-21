@@ -54,12 +54,12 @@ const News: React.FC = () => {
       }, []);
   return (
     <section className='sm:hidden w-full max-w-[90rem] items-center justify-center mt-[10rem]'>
-      <div className='px-[2rem] flex flex-col text-zinc-900 font-pop space-y-[2rem]'>
+      <div className='px-[1rem] flex flex-col text-zinc-900 font-pop space-y-[2rem]'>
         <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ y: {duration: 0.3, type: 'spring', stiffness: 200, damping: 20}, opacity: {duration: 0.3} }}
-        viewport={{ once: true, margin: '-250px' }}
+        viewport={{ once: true }}
         className='text-2xl font-bold text-center'>What happened in India, since the day Reeva promised to call</motion.h2>
       {loading ? (
         <p>Loading headlines...</p>
@@ -69,7 +69,7 @@ const News: React.FC = () => {
         whileInView={{ opacity: 1 }}
 
         transition={{ opacity: {delay: 0.3, duration: 0.3} }}
-        viewport={{ once: true, margin: '-250px' }}
+        viewport={{ once: true }}
         className='bg-red-500 rounded-3xl p-4 items-center justify-center flex flex-col space-y-[1.5rem]'>
           {headlines.length > 0 ? (
             headlines.map(({ date, headline }, index) => (
@@ -77,7 +77,7 @@ const News: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
                 transition={{ y: { duration: 0.2, type: 'spring', stiffness: 200, damping: 20}, opacity: { duration: 0.3} }}
-                viewport={{ once: true, margin: '-100px'}}
+                viewport={{ once: true }}
               key={index} className="headline bg-white rounded-3xl p-4 text-zinc-900 flex flex-col text-start items-center justify-center space-y-[0.5rem]">
                 <h2 className='text-md font-bold'>{headline.title}</h2>
                 <p className='text-sm font-medium text-gray-500'>{headline.description}</p>

@@ -17,7 +17,7 @@ const PageOne = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ y: {delay: 1.8, type: 'spring', stiffness: 100, damping: 25, duration: 0.4}, opacity: {delay: 1.8, duration: 0.4} }}
             viewport={{ once: true}}
-            className='text-start justify-start flex-col font-bold flex text-xl px-[2rem] py-[1.5rem] shadow-2xl text-white bg-red-600 bg-opacity-75 rounded-[2rem] backdrop-blur-[0.4rem] z-[5]'>
+            className='textContainerPageOne text-start justify-start flex-col font-bold flex text-xl px-[2rem] py-[1.5rem] shadow-2xl text-white bg-red-600 bg-opacity-75 rounded-[2rem] backdrop-blur-[0.4rem] z-[5]'>
                 {sentence.map((line: string, index: number) => (
                 <React.Fragment key={index}>
                 <motion.span className=''

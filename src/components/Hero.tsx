@@ -11,7 +11,7 @@ const letters = [
 const Hero = () => {
   return (
     <section id='navTop' className='sm:hidden max-w-[90rem] relative mx-auto w-full justify-center items-center text-zinc-900'>
-        <div className='fixed left-0 right-0 top-0 justify-center text-center items-center m-[0.5rem] py-[2rem] bg-white bg-opacity-70 backdrop-blur-lg rounded-[2rem] z-10'>
+        <div className='navTopBlur fixed left-0 right-0 top-0 justify-center text-center items-center m-[0.5rem] py-[2rem] bg-white bg-opacity-70 backdrop-blur-lg rounded-[2rem] z-10'>
         <Link 
         to='navTop'
         spy={true} 

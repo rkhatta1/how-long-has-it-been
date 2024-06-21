@@ -51,24 +51,24 @@ const TimeCalc: React.FC = () => {
       <motion.div 
       initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ y: {type: 'spring', stiffness: 100, damping: 25, duration: 0.4}, opacity: {duration: 0.4} }}
-        viewport={{ margin: '-300px', once: true,  }}
-      className="absolute top-[0] bg-white border-solid border-t-2 border-x-2 border-red-500 left-[50] z-[5] px-[1.5rem] py-[1.5rem] rounded-[1.2rem] shadow-xl font-bold font-pop text-2xl lowercase text-center items-center justify-center">
+        transition={{ y: {type: 'spring', stiffness: 100, damping: 25, duration: 0.4, delay: 2.8}, opacity: {delay: 2.8, duration: 0.4} }}
+        viewport={{ once: true,  }}
+      className="absolute top-[0] bg-white border-solid border-2 border-red-500 left-[50] z-[5] px-[1.5rem] py-[1.5rem] rounded-[1.2rem] shadow-xl font-bold font-pop text-2xl lowercase text-center items-center justify-center">
         Quantify the Misery
       </motion.div>
       <motion.img 
       initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ y: {delay: 0.5, type: 'spring', stiffness: 100, damping: 25, duration: 0.4}, opacity: {delay: 0.5, duration: 0.4} }}
-        viewport={{ margin: '-350px', once: true  }}
+        transition={{ y: {delay: 3, type: 'spring', stiffness: 100, damping: 25, duration: 0.4}, opacity: {delay: 3, duration: 0.4} }}
+        viewport={{ once: true  }}
       className="absolute top-[-2rem] right-[2.4rem] w-[3rem] h-auto z-[3] rotate-[15deg]" src={sadEmoji.src}>
       </motion.img>
       <motion.div 
       initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ opacity: { delay: 0.2, duration: 0.6} }}
-        viewport={{ margin: '-350px', once: true }}
-      className="timeContainer text-white flex px-[2.5rem] pt-[6rem] pb-[4rem] mt-[2.5rem] w-full flex-col rounded-[1.2rem] mx-[2rem] z-[1] bg-red-500">
+        transition={{ opacity: { delay: 3.2, duration: 0.6} }}
+        viewport={{ once: true }}
+      className="timeContainer text-white flex px-[2.5rem] pt-[6rem] pb-[4rem] mt-[2.5rem] w-full flex-col rounded-[1.2rem] mx-[1rem] z-[1] bg-red-500">
         <select
           className="rounded-2xl py-[1.2rem] font-pop text-lg font-black uppercase text-center shadow-xl bg-white text-zinc-900"
           value={selectedMetric}
@@ -91,7 +91,7 @@ const TimeCalc: React.FC = () => {
             {selectedMetric === "hours" && 
             <p className="text-center font-black text-[8rem] z-[1]">{timeDifference.hours}</p>}
             {selectedMetric === "minutes" && (
-                <p className="text-center font-black text-[5.5rem] z-[5]">{timeDifference.minutes}</p>
+                <p className="text-center font-black text-[5rem] z-[5]">{timeDifference.minutes}</p>
             )}
         </div>
       </motion.div>

@@ -8,3 +8,13 @@
 body {
   background-color: white;
 }
+
+.textContainerPageOne {
+  -webkit-backdrop-filter: blur(0.4rem);
+  backdrop-filter: blur(0.4rem);
+}
+
+.navTopBlur {
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+}
