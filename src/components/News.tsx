@@ -25,7 +25,7 @@ const News: React.FC = () => {
     useEffect(() => {
         const fetchTopHeadlines = async () => {
           try {
-            const response = await axios.get('https://newsapi.org/v2/top-headlines', {
+            const response = await axios.get('/api/news-proxy', {
               params: {
                 country: 'in', // Country code for India
                 pageSize: 100, // Increase the page size to retrieve more headlines
